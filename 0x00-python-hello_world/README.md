@@ -2,4 +2,4 @@
 ##Python programming
 ###1.a Shell script that runs a Python script
 ###2.a Shell script that runs Python code.
-###3..
+###3.a Python script that prints 
