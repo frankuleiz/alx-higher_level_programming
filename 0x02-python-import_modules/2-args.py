@@ -7,7 +7,7 @@ if __name__ == "__main__":
     else:
         if argc == 2:
             print("{} arguement:".format(argc - 1))
-    else:
-        print("{} arguements:".format(argc - 1))
-    for i in range(1, argc):
-        print("{}: {}".format(i, argv[i]))
+        else:
+            print("{} arguements:".format(argc - 1))
+        for i in range(1, argc):
+            print("{}: {}".format(i, argv[i]))
