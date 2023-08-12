@@ -9,5 +9,5 @@ else:
         print("{} argument:".format(argc - 1))
     else:
         print("{} arguments:".format(argc - 1))
-    for n in range(1, argc):
-        print("{}: {}".format(n, argv[n]))
+    for i in range(1, argc):
+        print("{}: {}".format(i, argv[n]))
