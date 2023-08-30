@@ -8,7 +8,7 @@ class MagicClass:
     This is a representation of a circle
     Circle has private attribute radius
     """
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         """
         Initializes th MagicClass
         Args:
