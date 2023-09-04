@@ -9,8 +9,8 @@ class Rectangle:
     A class rectangle definition.
     The rectangle with private attributes width and  height
     """
-        self.width = width
         self.height = height
+        self.width = width
 
     @property
     def width(self):
