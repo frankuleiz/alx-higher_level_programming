@@ -105,7 +105,7 @@ class Rectangle:
 
         return string
 
-    def __repr(self):
+    def __repr__(self):
         """
         A method that reurns string representation of rectangle.
         It allows recreation of a new instance
