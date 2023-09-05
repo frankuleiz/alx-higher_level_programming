@@ -6,4 +6,4 @@ class LockedClass:
     """
     A class LockedClass with an attribute to be set dynamically __slots__
     """
-    __slots__ = ['first name']
+    __slots__ = ['first_name']
