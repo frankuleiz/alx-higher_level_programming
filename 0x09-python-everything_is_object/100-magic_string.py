@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def magic_string():
-    string +=  "BestSchool"
-    return string
+    count += 1
+    return "BestSchool" * count
