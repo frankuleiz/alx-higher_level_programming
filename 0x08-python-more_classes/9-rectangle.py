@@ -20,7 +20,7 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """Returns a new rectangle instance"""
+        """Returns a new rectangle instance that is a square"""
         return cls(size, size)
 
     def __init__(self, width=0, height=0):
