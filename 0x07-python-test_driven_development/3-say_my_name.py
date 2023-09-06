@@ -1,4 +1,4 @@
-#!/usr/bin/pythom3
+#!/usr/bin/python3
 """
 The '3-say_my_name' module.
 This module passes one function say_my_name
