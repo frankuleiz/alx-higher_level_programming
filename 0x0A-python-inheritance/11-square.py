@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-The ``11-square'' module
+The ``11-square'' module.
+It has the class BaseGeometry and subclass Rectangle
 """
 Rectangle = __import__('9-rectangle').Rectangle
 
