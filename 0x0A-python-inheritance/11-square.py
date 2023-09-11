@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The ``10-square'' module
+The ``11-square'' module
 """
 Rectangle = __import__('9-rectangle').Rectangle
 
@@ -20,4 +20,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """This is a string representation of a square"""
-        return f"[{self.__class__.__name__}] {self.__size}"
+        return "[{:s}] {:d}/{:d}".format(self.__size, self.__size)
