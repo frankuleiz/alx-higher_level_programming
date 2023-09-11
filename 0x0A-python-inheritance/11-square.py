@@ -3,7 +3,7 @@
 The ``11-square'' module.
 It has the class BaseGeometry and subclass Rectangle
 """
-Rectangle = __import__('10-square').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
@@ -21,4 +21,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """This is a string representation of a square"""
-        return "[square] {:d}/{:d}".format(self.__size, self.__size)
+        return f"[{self.__class__.__name__}] {self.__size}/{self.__size}"
