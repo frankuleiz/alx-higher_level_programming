@@ -20,8 +20,12 @@ class Student:
         Return:
             a dictionary 
         """
-        new_dict = {}
         if attrs is None:
             return self.__dict__
         new_dict = self.__dict__
         return {k: new_dict[k] for k in attrs and new_dict.keys()}
+
+    def reload_from_json(self, json):
+        """Afunction that replaces all the student instances"""
+        for atr in json:
+            self.__dict__[atr] = json[atr]
