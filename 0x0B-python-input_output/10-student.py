@@ -23,4 +23,4 @@ class Student:
         if attrs is None:
             return self.__dict__
         new_dict = self.__dict__
-        return {k: new_dict[k] for k in attrs and ds.keys()}
+        return {k: new_dict[k] for k in attrs and new_dict.keys()}
