@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""A ``Base`` module class"""
+"""A ``base`` module class"""
+import os
+import sys
 
 
 class Base:
