@@ -130,6 +130,7 @@ class Rectangle(Base):
                 self.__width, self.__height)
 
     def update(self, *args, **kwargs):
+        """A function that updates the attributes of the rectangle"""
         attr = ["id", "width", "height", "x", "y"]
 
         if len(args) == 0:
