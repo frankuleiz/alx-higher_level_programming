@@ -123,7 +123,22 @@ class Rectangle(Base):
 
 
     def __str__(self):
+        """Function that overides the __str__"""
         return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
                 self.__class__.__name__,
                 self.id, self.__x, self.__y,
                 self.__width, self.__height)
+
+    def update(self, *args, **kwargs):
+        attr = ["id", "width", "height", "x", "y"]
+
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+            return
+        else:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
