@@ -115,12 +115,10 @@ class Rectangle(Base):
         """
         A function that prints the instance of rectangle as #
         """
-
         print("\n" * self.__y, end="")
 
         for i in range(self.__height):
             print("{:s}{:s}".format(" " * self.__x, "#" * self.__width))
-
 
     def __str__(self):
         """Function that overides the __str__"""
@@ -137,9 +135,21 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 setattr(self, key, value)
             return
-        else:
-                self.id = args[0]
-                self.width = args[1]
-                self.height = args[2]
-                self.x = args[3]
-                self.y = args[4]
+        try:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[2]
+            self.x = args[3]
+            self.y = args[4]
+        except Exception:
+            pass
+
+    def to_dictionary(self):
+        """
+        A function that returns the square attributes as a dictionary
+        """
+        return {"id": self.id,
+                "width": self.width,
+                "height": self.width,
+                "x": self.x,
+                "y": self.y}
