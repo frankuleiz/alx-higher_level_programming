@@ -61,7 +61,6 @@ class Base:
             return []
         return json.loads(json_string)
 
-    
     @classmethod
     def create(cls, **dictionary):
         """

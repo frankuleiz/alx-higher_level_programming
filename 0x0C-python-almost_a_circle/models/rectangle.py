@@ -129,8 +129,6 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """A function that updates the attributes of the rectangle"""
-        attr = ["id", "width", "height", "x", "y"]
-
         if len(args) == 0:
             for key, value in kwargs.items():
                 setattr(self, key, value)
