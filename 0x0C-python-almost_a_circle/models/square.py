@@ -27,7 +27,7 @@ class Square(Rectangle):
         """
         The setter method for the atttribute size
         """
-        if type(value) is not int:
+        if type(value) != int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be > 0")
