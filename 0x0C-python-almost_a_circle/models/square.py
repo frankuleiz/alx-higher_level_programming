@@ -57,7 +57,7 @@ class Square(Rectangle):
         A function that returns a string representation of the square
         """
         return "[{:s}] ({:d}) {:d}/{:d} - {:d}".format(
-                self.__class__.__name__,
+                type(self).__name__,
                 self.id, self.x, self.y, self.width)
 
     def to_dictionary(self):
