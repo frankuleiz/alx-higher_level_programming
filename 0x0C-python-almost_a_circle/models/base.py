@@ -68,14 +68,15 @@ class Base:
         """
         A fuction that creates a class instance with all attributes already set
         """
-        if cls.__name__ == "Rectangle":
-            dummy = cls(3, 2)
+        if dictionary and dictionary != {}:
+            if cls.__name__ == "Rectangle":
+                dummy = cls(3, 2)
 
-        if cls.__name__ == "square":
-            dummy = cls(2)
+            else:
+                dummy = cls(2)
 
-        dummy.update(**dictionary)
-        return dummy
+            dummy.update(**dictionary)
+            return dummy
 
     @classmethod
     def load_from_file(cls):
