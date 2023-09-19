@@ -48,10 +48,6 @@ class Rectangle(Base):
         Args:
             height
         """
-        if type(value) != int:
-            raise TypeError("height must be an integer")
-        if value <= 0:
-            raise ValueError("height must be > 0")
         return self.__height
 
     @height.setter
@@ -61,6 +57,10 @@ class Rectangle(Base):
         Args:
         Value: new value of the height of the rectangle
         """
+        if type(value) != int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
@@ -124,8 +124,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """Function that overides the __str__"""
-        return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
-                self.__class__.__name__,
+        return "[{}] ({}) {}/{} - {}/{}".format(
+                type(self).__name__,
                 self.id, self.__x, self.__y,
                 self.__width, self.__height)
 
