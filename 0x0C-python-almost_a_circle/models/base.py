@@ -95,7 +95,7 @@ class Base:
         """
         A function that writes to a file in csv format
         """
-       filename = cls.__name__ + ".csv"
+        filename = cls.__name__ + ".csv"
         with open(filename, "w", newline="") as csvfile:
             if list_objs is None or list_objs == []:
                 csvfile.write("[]")
@@ -106,4 +106,4 @@ class Base:
                     fieldnames = ["id", "size", "x", "y"]
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 for obj in list_objs:
-                    writer.writerow(obj.to_dictionary()) 
+                    writer.writerow(obj.to_dictionary())

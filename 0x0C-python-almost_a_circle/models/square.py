@@ -9,7 +9,7 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """
-        Initializes the square object instance 
+        Initializes the square object instance
         """
 
         super().__init__(size, size, x, y, id)
@@ -64,7 +64,7 @@ class Square(Rectangle):
         """
         A function that returns the dictionary representation of a square
         """
-        return {"id" : self.id,
-                "size" : self.size,
-                "x" : self.id,
-                "y" : self.y}
+        return {"id": self.id,
+                "size": self.size,
+                "x": self.id,
+                "y": self.y}
