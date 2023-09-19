@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""The ```Rectangle``` module """
+"""The ```Rectangle``` module"""
 
 
 from models.base import Base
@@ -10,7 +10,9 @@ class Rectangle(Base):
     Defines the Rectangle class that inherits from Base class
     """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initializes the Rectangle object instances"""
+        """
+        Initializes the Rectangle object instance
+        s"""
         super().__init__(id)
         self.__width = width
         self.__height = height
@@ -33,7 +35,7 @@ class Rectangle(Base):
         Args:
             Value: new value of the width of the rectangle
         """
-        if type(value) is not int:
+        if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
@@ -46,7 +48,7 @@ class Rectangle(Base):
         Args:
             height
         """
-        if type(value) is not int:
+        if type(value) != int:
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
