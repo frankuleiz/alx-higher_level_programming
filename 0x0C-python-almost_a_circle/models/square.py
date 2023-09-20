@@ -56,7 +56,7 @@ class Square(Rectangle):
         """
         A function that returns a string representation of the square
         """
-        return "[{:s}] ({:d}) {:d}/{:d} - {:d}".format(
+        return "[{}] ({}) {}/{} - {}".format(
                 type(self).__name__,
                 self.id, self.x, self.y, self.width)
 
