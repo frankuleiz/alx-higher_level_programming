@@ -2,6 +2,6 @@
 -- first_table of the database hbtn_0c_0
 -- The database name will be passed as an argument of the mysql command
 
-SELECT *
+SELECT id
 FROM first_table
 WHERE id =89
