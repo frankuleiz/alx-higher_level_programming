@@ -1,5 +1,6 @@
--- script that lists all genres from hbtn_0d_tvshows and displays the number of
--- shows linked to each.
+-- A script that lists all genres from hbtn_0d_tvshows and displays the number
+-- First column must be called genre
+-- Second column must be called number_of_shows:wq
 
 SELECT tv_genres.name AS genre, COUNT(*) AS 'number_shows'
 FROM tv_genres
