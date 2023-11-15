@@ -2,6 +2,6 @@
 
 module.exports.callMeMoby = function (x, theFunction) {
   for (let i = 0; i < x; i++) {
-    let result = theFunction(i);
+    theFunction();
   }
 };
