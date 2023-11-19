@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+The script displays all the values of the state table but that guards
+from a SQL injection
+"""
 
 import sys
 import MySQLdb
