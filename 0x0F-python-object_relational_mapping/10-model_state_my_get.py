@@ -1,4 +1,4 @@
-#!/usr/bin/pythonon3
+#!/usr/bin/python3
 """
 The script that prints the state object with the name passed
 as arguement from the database
