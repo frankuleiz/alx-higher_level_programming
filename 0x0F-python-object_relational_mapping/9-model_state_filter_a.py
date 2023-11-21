@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The script lists all state bjects that contain the 
+The script lists all state bjects that contain the
 letter 'a' from the database
 """
 
