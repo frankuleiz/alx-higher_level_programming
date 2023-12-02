@@ -5,7 +5,7 @@ A script that  fetches https://alx-intranet.hbtn.io/status
 if __name__ == "__main__":
     import requests
 
-    req = request.get("https://alx-intranet.hbtn.io/status")
+    req = requests.get("https://alx-intranet.hbtn.io/status")
     text = req.text
     print("Body response:")
     print("\t- type: {}".format(type(text)))
