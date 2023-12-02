@@ -19,9 +19,9 @@ if __name__ == "__main__":
     """validate if the response is a json file and its not empty"""
     try:
         json = resp.json()
-        if json:
-            print("[{}] {}".format(json.get("id"), json.get("name")))
-        else:
+        if not json:
             print("No Result")
+        else:
+            print("[{}] {}".format(json.get("id"), json.get("name")))
     except ValueError:
         print("Not a valid JSON")
